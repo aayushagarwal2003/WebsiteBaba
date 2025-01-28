@@ -24,9 +24,9 @@ const isAuthenticated = async() =>{
             return
         }
         const userGet = await convex.query(api.users.GetUser,{email:user?.email});
-        console.log("USER",userGet._id)
+        // console.log("USER",userGet._id)
         const workspaceGet = await convex.query(api.workspace.GetWorkspace,{workspaceId:workspaceId})
-        console.log("WORKSPACE",workspaceGet.user)
+        // console.log("WORKSPACE",workspaceGet.user)
         if(userGet._id !== workspaceGet.user){
             navigate('/')
         }

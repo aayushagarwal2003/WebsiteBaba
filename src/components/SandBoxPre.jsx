@@ -18,9 +18,9 @@ function SandBoxPre() {
         if(client){
             
             const result = await client.getCodeSandboxURL();
-            console.log('https://'+result?.sandboxId+'.csb.app/');
-            window.open('https://'+result?.sandboxId+'.csb.app/');
-            console.log(result?.sandboxId)
+            // console.log('https://'+result?.sandboxId+'.csb.app/');
+            window.open('https://'+result?.sandboxId+'.csb.app');
+            // console.log(result?.sandboxId)
             // https://4rqtlz.csb.app/
             // window.open(result?.editorU
 
